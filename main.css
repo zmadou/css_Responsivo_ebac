@@ -95,6 +95,10 @@ section {
     display: flex;
 }
 
+.clear {
+    clear: both;
+}
+
 .titulo {
     border-bottom: 1px solid blueviolet;
     color: blueviolet;
@@ -285,10 +289,4 @@ footer div p {
         margin-right: 16px;
     }
     
-}
-
-@media  and (min-width:1024px) {
-    .botao-menu {
-        display:none
-    }    
 }
