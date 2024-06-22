@@ -1,0 +1,294 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+header {
+    padding: 16px 0 0;
+    margin-bottom: 56px;
+    background-color: blueviolet;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: #fff;
+}
+
+.submenu {
+    display: none;
+    border: 1px solid #fff;
+    background-color: blueviolet;
+    position: absolute;
+    left: 0;
+    max-width: 300px;
+    top: 100%;
+    text-decoration: none;
+    
+}
+
+.menu {
+    align-items: left;
+}
+
+.submenu li a:link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.submenu li a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu > li {
+    float: left;
+    list-style: none;
+    padding: 16px;
+    position: relative;
+    color: #fff;
+    cursor: pointer;
+    
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+
+.botao-menu {
+    display: none;
+}
+
+.submenu li {
+    display: block;
+    padding: 8px;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.menusobre a:link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menusobre a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+section {
+    display: flex;
+}
+
+.titulo {
+    border-bottom: 1px solid blueviolet;
+    color: blueviolet;
+}
+
+.destaque .sobre img {
+    margin-right: 16px;
+}
+
+.textsobre p {
+    padding-top: 26px;
+}
+
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+
+.action {
+    padding-top: 32px;
+    display: grid;
+    grid-template-columns: repeat(4, 24.25%); 
+    column-gap: 1%;
+    row-gap: 5%;
+    margin-bottom: 45px;
+}
+
+.action .sobre img {
+    max-width: 90%;
+}
+
+.subtitulo {
+    padding-top: 32px;
+    border-bottom: 1px solid blueviolet;
+    max-width: 100%;
+    color: blueviolet;
+}
+
+.subtitulo h2 {
+    margin-bottom: 16px;
+}
+
+button {
+    padding: 5px;
+    background-color: blueviolet;
+    color: #fff;
+    font-weight: bold;
+    width: 200px;
+}
+
+button:hover {
+    background-color: #5a0fa0;
+}
+
+footer {
+    background-color: blueviolet;
+    height: 90px;
+    padding: 4px;
+}
+
+footer div {
+    max-width: 1024px;
+    width: 100%;
+    margin: 26px auto;
+    text-align: center;
+}
+
+footer div p {
+    margin-top: 26px;
+    color: #fff;
+}
+
+@media screen and (max-width: 640px) {
+
+
+    .container {
+        max-width: 90%;
+    }
+
+    .destaque {
+        display: block;
+    }
+
+    .destaque .sobre img {
+        margin-right: 0;
+        max-width: 90%;
+    }
+
+    .action {
+        padding-top: 32px;
+        display: block;
+        margin-bottom: 32px;
+    }
+
+    .sobre {
+        margin-bottom: 32px;
+    }
+
+    section {
+        display: block;
+    }
+
+    .action .sobre img {
+        max-width: 90%;
+    }
+
+    .action .sobre {
+        max-width: 90%;
+    
+    }
+
+    .action article {
+        align-items: center;
+    }
+
+    footer div {
+        width: 100%;
+        margin: 26px auto;
+        text-align: center;
+    }
+
+    .menusobre {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+
+    .menu > li {
+
+        clear: both;
+        color: #fff;
+
+        
+    }
+    
+    .submenu li {
+        display: block;
+        padding: 8px;
+        color: #fff;
+    }
+
+    .submenu {
+        display: block;
+        background-color: blueviolet;
+        position: relative;
+        width: 100%;
+        border: none;
+        
+    }
+
+    .botao-menu {
+        display: flex;
+        justify-content: center;
+        margin-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .botao-menu button {
+        padding: 8px;
+        background-color: #fff;
+        color: blueviolet;
+    }
+
+    header .container {
+        flex-direction: column;
+    }
+
+    #menu {
+        display: none;
+    }
+}
+
+@media screen and (min-width:641px) and (max-width:1023px) {
+
+    .container {
+        max-width: 90%;
+    }
+
+    .action {
+        grid-template-columns: repeat(2, 49%); 
+    }
+
+    .destaque .sobre img {
+        margin-right: 16px;
+    }
+    
+}
+
+@media  and (min-width:1024px) {
+    .botao-menu {
+        display:none
+    }    
+}

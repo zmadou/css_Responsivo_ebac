@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Action Figures</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header>
+
+        <div class="container">
+            <h1>AF Animes</h1>
+        
+            <div class="botao-menu">
+                <button type="button">Animes</button>
+            </div>
+    </div>
+        <nav class="container">
+            
+            <ul class="menu">
+                <li class="menusobre"><a href="#">Sobre a Loja</a></li>
+                <li><a id="menu">Animes</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href="#">Dragon ball</a>
+                        </li>
+                        <li>
+                            <a href="#">Naruto</a>
+                        </li>
+                        <li>
+                            <a href="#">One Piece</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <main>
+            <section class="destaque">
+                <article class="sobre">
+                    
+                    <a href="#">
+                        <img src="./images/loja.png" />
+                        
+                    </a>
+                </article>
+                <article class="textsobre">
+                    <div class="titulo"><h2>Sobre a Loja</h2></div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi dolorem voluptatum vel ex necessitatibus illo est illum odio pariatur, ipsam optio reprehenderit, maxime ullam veritatis eius accusamus! Sit, sequi et?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo blanditiis delectus commodi odit corrupti, adipisci eos incidunt enim quasi rerum explicabo voluptates totam quibusdam voluptatum autem doloribus ipsam nihil praesentium.
+                    </p>
+                </article>
+            </section>
+            <div class="subtitulo"><h2>Action Figures</h2></div>
+            <section>
+                <div class="action">
+                    <article class="sobre">
+                        <a href="#">
+                            <img src="./images/buggy.jpg" />
+                            <h3>Action Figure - Buggy</h3></a>
+                            <p>Figura: Minato</p>
+                            <p>Altura aproximada: 16cm</p>
+                            <p>PVC e Die-cast</p>
+                            <button type="button">Adicionar ao carrinho</button>
+                    </article>
+                    <article class="sobre">
+                        <a href="#">
+                            <img src="./images/minato.jpg" />
+                            <h3>Action Figure - Minato</h3></a>
+                            <p>Figura: Minato</p>
+                            <p>Altura aproximada: 16cm</p>
+                            <p>PVC e Die-cast</p>  
+                            <button type="button">Adicionar ao carrinho</button>                      
+                    </article>
+                    <article class="sobre">
+                        <a href="#">
+                            <img src="./images/luffy.jpg" />
+                            <h3>Action Figure - Luffy</h3></a>
+                            <p>Figura: Minato</p>
+                            <p>Altura aproximada: 16cm</p>
+                            <p>PVC e Die-cast</p>
+                            <button type="button">Adicionar ao carrinho</button>
+                    </article>
+                    <article class="sobre">
+                        <a href="#">
+                            <img src="./images/ace.jpg" />
+                            <h3>Action Figure - Ace</h3></a>
+                            <p>Figura: Minato</p>
+                            <p>Altura aproximada: 16cm</p>
+                            <p>PVC e Die-cast</p>
+                            <button type="button">Adicionar ao carrinho</button>
+                    </article>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <div><p>&copy;Todos os direitos reservados</p></div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $('.botao-menu button').click(function() {
+                $('.menu').slideToggle();
+            })
+        })
+    </script>
+
+    
+</body>
+</html>
